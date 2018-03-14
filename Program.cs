@@ -120,7 +120,8 @@ namespace banking_app_oop
         {
             Console.WriteLine(Greet());
             Console.WriteLine(InitialBalance());
-            LoadMenu();
+            if (Balance >= 500)
+                LoadMenu();
         }
     }
 }
